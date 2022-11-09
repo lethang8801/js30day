@@ -76,3 +76,53 @@
 //       break;
 //   }
 // }
+
+// function checkDay() {
+//     let day = prompt("to day: ").toLocaleLowerCase()
+//     switch (day) {
+//         case 'monday':
+//         case 'tuesday':
+//         case 'wednesday':
+//         case 'thursday':
+//         case 'friday':
+//             document.getElementById('demo').innerHTML = "working"
+//             break;
+
+//         case 'saturday':
+//         case 'sunday':
+//             document.getElementById('demo').innerHTML = "weekend"
+//     }
+// }
+
+/** LEVEL 3 Challenges **/
+function checkMonths() {
+    let month = prompt("Enter a month: ").toLowerCase();
+
+    // check if it is leap year 
+    let d = new Date();
+    let year = d.getFullYear();
+
+    if (month == "february") {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) { document.getElementById('demo').innerHTML = '28' }
+        document.getElementById('demo').innerHTML = '28'
+    } else {
+        switch (month) {
+            case "january":
+            case "march":
+            case "may":
+            case "july":
+            case "august":
+            case "october":
+            case "december":
+                document.getElementById('demo').innerHTML = '31'
+                break;
+
+            case "april":
+            case "june":
+            case "september":
+            case "november":
+                document.getElementById('demo').innerHTML = '30'
+                break;
+        }
+    }
+}
