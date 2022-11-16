@@ -1,2 +1,7 @@
-console.log(countries)
-alert('Open the console and check if the countries has been loaded')
+// function fullName() {
+//   const firstName = "le"
+//   const lastName = "thang"
+//   const fullName = firstName + lastName
+//   return document.getElementById('demo').innerHTML = fullName
+// }
+
