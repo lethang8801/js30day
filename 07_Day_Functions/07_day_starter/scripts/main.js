@@ -112,3 +112,90 @@
 //
 //   document.getElementById('demo').innerHTML = formattedToday;
 // }
+
+//5
+// const swapValue = (a,b) => {
+//   return [b,a];
+// }
+// console.log(swapValue(1,2))
+
+//6
+
+// const reverseArray = (arr) =>{
+//   return arr.reverse()
+// }
+// console.log(reverseArray([1, 2, 3, 4, 5]))
+
+// const reverseArray = (arr) =>{
+//   return arr.sort((a,b)=> (b - a))
+// }
+// console.log(reverseArray([1, 2, 3, 4, 5]))
+
+//7
+// const capitalizeArray = (arr) => arr.map(cac => cac.toUpperCase())
+//
+// console.log(capitalizeArray(["a","b"]))
+
+//8
+
+// const addItem = (params) => {
+//   const arr = ["a","b"]
+//   arr.push(params)
+//   return arr
+// }
+// console.log(addItem("c"))
+
+//9
+// const removeItem = (params) => {
+//   const arr = ["a", "b"]
+//   return arr.filter(item => item !== params)
+// }
+// console.log(removeItem("a"))
+
+//10
+
+// const sumOfNumbers = (arr) => {
+//   const sum = 0
+//   return arr.reduce((previousValue, currentValue) => previousValue + currentValue, sum)
+// }
+// console.log(sumOfNumbers([1,2,3,4,5]))
+
+
+
+// in ra những số có “số đầu tiên là số lẻ”
+// const num =[889, 100, 546, 1001, 2022, 5, 79, 68, 99999, 4687]
+//
+// // const arr = () =>{
+// //   num.map(item => {
+// //     console.log(Math.floor((item / Math.pow(10, (item.toString().length - 1)))) % 2)
+// //
+// //     if(Math.abs((item / Math.pow(10, (item.toString().length - 1)))) % 2){
+// //       return item
+// //     }
+// //     return
+// //   })
+// // }
+// // console.log(arr())
+//
+// for(let i= 0; i< num.length; i++ ){
+//
+// }
+
+//11
+// const sumOfOdds = (arr) => {
+//   let odds = arr.filter(item => item % 2)
+//   return odds.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
+// }
+// console.log(sumOfOdds([1,2,3,4,6]))
+
+//12
+// const sumOfEven = (arr) => {
+//   let even = arr.filter(item => item % 2 === 0)
+//   return even.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
+// }
+// console.log(sumOfEven([1,2,3,4,6]))
+
+
+// [0, 1, 2, 3, 4].reduce(function(previousValue, currentValue, currentIndex, array) {
+//   return previousValue + currentValue // 10
+// })
