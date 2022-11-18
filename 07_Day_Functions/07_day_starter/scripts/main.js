@@ -199,3 +199,52 @@
 // [0, 1, 2, 3, 4].reduce(function(previousValue, currentValue, currentIndex, array) {
 //   return previousValue + currentValue // 10
 // })
+
+
+//11 cach 2
+// const newArr = []
+// const sumOfOdds = (arr) => {
+//   for (let i = 0; i < arr.length ; i++) {
+//     if(arr[i] % 2 !== 0) {
+//       newArr.push(arr[i])
+//     }
+//   }
+//   return newArr.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
+// }
+// console.log(sumOfOdds([1,2,3,4,5,6]))
+
+//15
+// function generateIP () {
+//   let a = parseInt(Math.random() * 100);
+//   let b = parseInt(Math.random() * 255);
+//   let c = parseInt(Math.random() * 255);
+//   let d = parseInt(Math.random() * 255);
+//
+//
+//   return `${a}.${b}.${c}.${d}`;
+// }
+//
+// console.log(generateIP())
+
+//16
+function randomMacAddress () {
+  return Math.floor(Math.random() * 100)
+}
+
+// console.log(randomMacAddress())
+
+function genMAC(){
+  const hexDigits = "0123456789ABCDEF";
+  let macAddress = "";
+  for (let i = 0; i < 6; i++) {
+    macAddress+=hexDigits.charAt(Math.round(Math.random() * 15));
+    macAddress+=hexDigits.charAt(Math.round(Math.random() * 15));
+    if (i !== 5) {
+      macAddress = macAddress + ":";
+    }
+  }
+
+  return macAddress;
+}
+
+console.log(genMAC());
