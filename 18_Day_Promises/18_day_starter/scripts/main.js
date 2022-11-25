@@ -92,19 +92,8 @@
 //   .catch(error => console.error(error)) // handling error if something wrong happens
 
 //1
-// const countriesAPI = 'https://restcountries.com/v2/all'
-// fetch(countriesAPI).then(res => res.json()).then(data => console.log(data.map(item => item?.capital))).catch(err => console.log(err))
-
-// function myDisplayer(some) {
-//   console.log(some)
-// }
-//
-// function myCalculator(num1, num2, myCallback) {
-//   let sum = num1 + num2;
-//   myCallback(sum);
-// }
-//
-// myCalculator(5, 5, myDisplayer)
+const countriesAPI = 'https://restcountries.com/v2/all'
+fetch(countriesAPI).then(res => res.json()).then(data => console.log(data.map(item => item?.capital))).catch(err => console.log(err))
 
 // setInterval(myFunction, 10);
 //
