@@ -92,8 +92,8 @@
 //   .catch(error => console.error(error)) // handling error if something wrong happens
 
 //1
-const countriesAPI = 'https://restcountries.com/v2/all'
-fetch(countriesAPI).then(res => res.json()).then(data => console.log(data.map(item => item?.capital))).catch(err => console.log(err))
+// const countriesAPI = 'https://restcountries.com/v2/all'
+// fetch(countriesAPI).then(res => res.json()).then(data => console.log(data.map(item => item?.capital))).catch(err => console.log(err))
 
 // setInterval(myFunction, 10);
 //
@@ -136,13 +136,13 @@ const user = [
     last_name: "dsadsa",
   },
 ]
-
-const customUser = user.reduce((acc, cur) => {
-  console.log("acc",acc,cur.email)
-  return {
-    ...acc,[cur.email] : cur
-  }
-},{})
+//
+// const customUser = user.reduce((acc, cur) => {
+//   console.log("acc",acc,cur.email)
+//   return {
+//     ...acc,[cur.email] : cur
+//   }
+// },{})
 
 // acc === {}
 // acc {
@@ -156,4 +156,12 @@ const customUser = user.reduce((acc, cur) => {
   // }
 // }
 //
-console.log('cus',customUser)
+// console.log('cus',customUser)
+
+
+const fetchData = async () => {
+  const response = await fetch('https://restcountries.com/v2/all');
+  const data = await response.json();
+  console.log(data.map(item => item?.capital));
+};
+fetchData()

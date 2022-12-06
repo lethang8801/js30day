@@ -164,24 +164,24 @@
 
 // in ra những số có “số đầu tiên là số lẻ”
 // const num =[889, 100, 546, 1001, 2022, 5, 79, 68, 99999, 4687]
-//
-// // const arr = () =>{
-// //   num.map(item => {
-// //     console.log(Math.floor((item / Math.pow(10, (item.toString().length - 1)))) % 2)
-// //
-// //     if(Math.abs((item / Math.pow(10, (item.toString().length - 1)))) % 2){
-// //       return item
-// //     }
-// //     return
-// //   })
-// // }
-// // console.log(arr())
-//
+
+// const arr = () =>{
+//   num.map(item => {
+//     console.log(Math.floor((item / Math.pow(10, (item.toString().length - 1)))) % 2)
+
+//     if(Math.abs((item / Math.pow(10, (item.toString().length - 1)))) % 2){
+//       return item
+//     }
+//     return
+//   })
+// }
+// console.log(arr())
+
 // for(let i= 0; i< num.length; i++ ){
 //
 // }
 
-//11
+// 11
 // const sumOfOdds = (arr) => {
 //   let odds = arr.filter(item => item % 2)
 //   return odds.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
@@ -196,9 +196,18 @@
 // console.log(sumOfEven([1,2,3,4,6]))
 
 
-// [0, 1, 2, 3, 4].reduce(function(previousValue, currentValue, currentIndex, array) {
-//   return previousValue + currentValue // 10
-// })
+
+// const odds = (arr) => {
+// let newArr = []
+//   for (let i = 0; i < arr.length; i++) {
+//     if( arr[i] % 2 !== 0 ) {
+//         newArr.push(arr[i])
+//     }
+//   }
+//   return newArr.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
+// }
+
+// console.log(odds([1,2,3]));
 
 
 //11 cach 2
